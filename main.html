@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar and Audio Section</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<nav>
-		<ul>
-			<li><a href="#s1">song 1</a></li>
-			<li><a href="#s2">song 2</a></li>
-			<li><a href="#s3">song 3</a></li>
-</ul></nav>
-		<h2>3 random audios</h2>
-			<audio controls id="s1"><source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">this audio file not support for you.</audio>
-			<audio controls id="s2"><source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"  type="audio/ogg">Song2</audio>
-			<audio controls id="s3"><source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">Song3</audio>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Semantic Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#link1">Link 1</a></li>
+            <li><a href="#link2">Link 2</a></li>
+            <li><a href="#link3">Link 3</a></li>
+        </ul>
+    </nav>
 
+    <!-- Audio Section -->
+    <h2>3 Random Audios</h2>
+    <div class="audio-tracks">
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio controls>
+            <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio controls>
+            <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </body>
 
 </html>
